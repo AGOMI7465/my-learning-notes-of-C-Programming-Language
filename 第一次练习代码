@@ -1,0 +1,10 @@
+//预处理
+#include <stdio.h>//#include就是查找，"stdio.h"标准输入输出，还有"time.h"，"math.h"
+//主入口，好比胶带的头，一个文件只能有一个主入口，冲突了就改名或注释掉
+int main(void)//int表示运行结果是整数
+{
+	//删除的时候按alt拖鼠标可以竖着删 注释快捷键ctrl+k,ctrl+c  取消快捷键ctrl+k,ctrl+u
+  printf("现在12+6=%d别说话在干饭",12+6);//输出语句
+	//0：程序正常结束
+	return 0;
+}
