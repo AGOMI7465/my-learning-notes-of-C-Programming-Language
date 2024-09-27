@@ -1,0 +1,20 @@
+#include<stdio.h>
+int main()
+{
+	//输出常量
+	//1.输出整数
+	printf("年龄%d，性别%s\n", 18, "男");//\换行
+
+	//2.输出小数
+	printf("身高%f\n", 1.93);
+	int a;
+	a = 10;
+	int b;
+	b = 12;
+	printf("%d\n", a + b);
+	
+	float money = 100;
+	float lucky_money=20.22;
+	money += lucky_money;
+	printf("%.2f", money);//.1f精确到小数点后一位
+	return 0;
