@@ -12,7 +12,11 @@ int main()
 	int b;
 	b = 12;
 	printf("%d\n", a + b);
-	
+
+	//进制转换
+	int x = 0b1011;
+	printf("x=%d\n", x);
+
 	float money = 100;//变量先定义再赋值
 	float lucky_money=20.22;
 	money += lucky_money;
