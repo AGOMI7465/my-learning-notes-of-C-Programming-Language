@@ -13,7 +13,7 @@ int main()
 	b = 12;
 	printf("%d\n", a + b);
 	
-	float money = 100;
+	float money = 100;//变量先定义再赋值
 	float lucky_money=20.22;
 	money += lucky_money;
 	printf("%.2f", money);//.1f精确到小数点后一位
