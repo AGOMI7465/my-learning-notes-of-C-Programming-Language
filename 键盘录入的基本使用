@@ -1,0 +1,16 @@
+//练习学校名字
+#include<stdio.h>
+int main()
+{
+	//1.定义变量记录名字 
+	char str[100];//数据类型 变量名[内存占用大小]英文字母数字符号占一个字节，中文二
+	
+	//2.键盘输入名字
+	printf("请输入学校名字：");
+#pragma warning(disable : 4996)
+	scanf("%s", &str);
+	
+	//3.输出打印
+	printf("我学校名字是：%s", str);
+	return 0;
+}
