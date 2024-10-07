@@ -11,6 +11,20 @@ int main()
 	scanf("%s", &str);
 	
 	//3.输出打印
-	printf("我学校名字是：%s", str);
+	printf("我学校名字是：%s\n", str);
+
+//计算长方形3面面积，保留2位小数
+	double length;
+	double width;
+	double height;
+	printf("请输入三个小数，分别为长宽高");
+	scanf("%lf %lf %lf", &length, &width, &height);
+	double areaA = length * width;
+	double areaB = height * width;
+	double areaC = width * height;
+	printf("A面的面积为：%.2lf\n", areaA);
+	printf("B面的面积为：%.2lf\n", areaB);
+	printf("C面的面积为：%.2lf\n", areaC);
+
 	return 0;
 }
