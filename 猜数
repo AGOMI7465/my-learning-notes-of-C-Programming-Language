@@ -1,0 +1,32 @@
+#include <time.h>
+#include <stdio.h>
+#include <stdlib.h>
+
+int main()
+{
+	int magic,guess,counter = 0;
+	int ret;
+	srand(time(NULL));
+	magic = rand()%100+1;//生成1到100间的随机数
+	do 
+	{
+		printf("please guess a magic number:");
+		ret = scanf("%d", &guess);
+		while (ret != 1)
+		{
+			while (getchar() != '\n');
+			printf("please guess a magic number:");
+			ret = scanf("%d", &guess);
+		}
+		counter++;
+		if (guess > magic)
+			printf("worong!too big\n");
+		else if (guess < magic)
+			printf("worong!too small\n");
+		else
+			printf("right!\n");
+	} while (guess != magic);
+	printf("counter = %d\n", counter);
+	
+	return 0;
+}
