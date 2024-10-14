@@ -6,7 +6,7 @@ int main()
 	{
 		for (int j=1;j<=i;j++)
 		{
-			printf("%d * %d = %d\t",j,i,j*i);
+			printf("%d * %d = %d\t",j,i,j*i);//\t根据前面字母的个数在后面补空格让整体的长度达到八或者八的倍数,最少补一个最多补两个,中文代表两个字符
 		}
 		printf("\n");
 	}
