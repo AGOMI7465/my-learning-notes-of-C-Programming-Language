@@ -1,0 +1,28 @@
+#include<stdio.h>
+int main()
+{
+	//1.定义数组存储数据 
+	int  arr[] = { 4,7,6,3,1,2,5 };
+	int len = sizeof(arr) / sizeof(int);
+
+	//2.利用冒泡排序把数组中的数据按照升序排列
+	for (int i = 0; i < len - 1; i++)
+	{
+		for (int j = 0; j < len - 1 -i; j++)
+		{
+			if (arr[j] > arr[j + 1])
+			{
+				int temp = arr[j];
+				arr[j] = arr[j + 1];
+				arr[j + 1] = temp;
+			}
+		}
+	}
+	//3.遍历
+	for (int i = 0; i < len ; i++)
+	{
+		printf("%d\n", arr[i]);
+	}
+
+	return 0;
+}
